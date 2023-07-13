@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport" content="width=device,intial-scale1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        h1{
+            display: flex;
+            flex-direction:row;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(0, 255, 221);
+            font-size: 45px;
+            justify-content: center;
+        }
+        .form-container{
+            display:flex;
+            justify-content:center;
+            /*: 1px solid black;*/
+            padding: 100px;
+            border: 23px;
+            
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+           /* border: 1px solid black;*/
+            align-items:center;
+        }
+        form input{
+            width: 500px;
+            font-size:20px;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius:10px;
+            border:none;
+            border:1px solid grey;
+            
+        }
+        #submit-btn{
+            width:200px;
+            background-color:rgb(3, 235, 184);
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+        }
+    </style>
+    <body>
+        <h1> Registration form</h1>
+        <div class="form-container">
+            <form action="/register" method="post"></form>
+                <input type="text" name="fullname" placeholder="enter your name">
+                <input type="email" name="email" placeholder="enter your email">
+                <input type="tel" name="phone" placeholder="enter your phone">
+                <input type="password" name="password" placeholder="enter your password">
+                <input type="submit" name="submit"  value="submit" >
+
+            </form>
+        </div>
+    </body>
+</html>
